@@ -13,7 +13,7 @@ function Testimonials({data,activeComponent}) {
     // },[data])
     return (
         <div className="testimonial">
-        {/* {activeComponent &&  <h1>{(data[activeComponent]).message}</h1>} */}
+         {activeComponent &&  <h1>{(data[activeComponent]).message}</h1>}
         </div>
     )
 }
