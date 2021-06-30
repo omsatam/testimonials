@@ -54,11 +54,12 @@ function Avatars() {
 current = document.getElementsByClassName("active");
                 console.log(current)
                 var nextAvatar = parseInt(current[0].id) + parseInt(1)
-                setActiveComponent(nextAvatar)
+                
                 if (current.length !== 0) {
                     current[0].className = current[0].className.replace(" active", "");
-                }
+var current = document.getElementsByClassName("active");
                 document.getElementById(str(nextAvatar)).className += " active"
+}
             }
         })
 
