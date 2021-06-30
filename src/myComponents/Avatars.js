@@ -27,6 +27,7 @@ function Avatars() {
         let avatars = document.getElementsByClassName("avatars__avatar");
         for (let i = 0; i < avatars.length; i++) {
             avatars[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active")
       
                 if (current.length !== 0) {
                     current[0].className = current[0].className.replace(" active", "");
@@ -38,7 +39,7 @@ function Avatars() {
 
         document.getElementById("before").addEventListener("click", function () {
             if (data) {
-                 current = document.getElementsByClassName("active");
+               var  current = document.getElementsByClassName("active");
                 var previousAvatar = parseInt(current[0].id) - parseInt(1)
                 setActiveComponent(previousAvatar)
                 if (current.length !== 0) {
@@ -51,7 +52,7 @@ function Avatars() {
 
         document.getElementById("next").addEventListener("click", function () {
             if (data) {
-current = document.getElementsByClassName("active");
+var current = document.getElementsByClassName("active");
                 console.log(current)
                 var nextAvatar = parseInt(current[0].id) + parseInt(1)
                 
