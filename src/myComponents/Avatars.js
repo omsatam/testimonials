@@ -69,7 +69,7 @@ function Avatars() {
             fetchData()
         }
 
-    }, [data,activeComponent])
+    }, [activeComponent])
 
     return (
         <>
