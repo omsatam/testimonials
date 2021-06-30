@@ -67,7 +67,7 @@ var current = document.getElementsByClassName("active");
             fetchData()
         }
 
-    }, [)
+    }, [])
 
     return (
         <>
