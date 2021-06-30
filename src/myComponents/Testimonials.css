@@ -1,0 +1,4 @@
+.testimonial > h1 {
+  transition-property: width;
+  transition: all 2s ease ease-in-out;
+}

@@ -1,0 +1,14 @@
+.avatars {
+  display: flex;
+  /* width: 80%; */
+  /* justify-content: space-around; */
+}
+.avatars__avatar {
+  cursor: pointer;
+  margin: 20px;
+  width: 60px !important;
+  height: 60px !important;
+}
+.active {
+  border: 2px solid green;
+}
