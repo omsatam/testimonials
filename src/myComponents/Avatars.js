@@ -31,7 +31,7 @@ function Avatars() {
         let avatars = document.getElementsByClassName("avatars__avatar");
         for (let i = 0; i < avatars.length; i++) {
             avatars[i].addEventListener("click", function () {
-                console.log(current)
+      
                 if (current.length !== 0) {
                     current[0].className = current[0].className.replace(" active", "");
                 }
@@ -41,9 +41,9 @@ function Avatars() {
         }
 
         document.getElementById("before").addEventListener("click", function () {
-            if (data && current[0]) {
+            if (data) {
                 
-                let previousAvatar = parseInt(current[0].id) - parseInt(1)
+                var previousAvatar = parseInt(current[0].id) - parseInt(1)
                 setActiveComponent(previousAvatar)
                 if (current.length !== 0) {
                     current[0].className = current[0].className.replace(" active", "");
@@ -56,7 +56,7 @@ function Avatars() {
         document.getElementById("next").addEventListener("click", function () {
             if (data) {
                 console.log(current)
-                let nextAvatar = parseInt(current[0].id) + parseInt(1)
+                var nextAvatar = parseInt(current[0].id) + parseInt(1)
                 setActiveComponent(nextAvatar)
                 if (current.length !== 0) {
                     current[0].className = current[0].className.replace(" active", "");
@@ -69,14 +69,14 @@ function Avatars() {
             fetchData()
         }
 
-    }, [data])
+    }, [data,activeComponent])
 
     return (
         <>
             {data && <Testimonials data={data} activeComponent={activeComponent} />}
             <div className="avatars">
                 {data?.map((person) => (
-                    <Avatar id={person.id} key={person.id} onClick={null} className={`avatars__avatar ${person.id === 1 && "active"}`} src={person.avatar} />
+                    <Avatar id={person.id} key={person.id} className={`avatars__avatar ${person.id === 1 && "active"}`} src={person.avatar} />
                 ))}
             </div>
             < NavigateBeforeIcon id="before" />
