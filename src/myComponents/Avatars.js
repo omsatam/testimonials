@@ -44,7 +44,7 @@ function Avatars() {
                 if (current.length !== 0) {
                     current[0].className = current[0].className.replace(" active", "");
                 }
-                document.getElementById(previousAvatar).className += " active"
+                document.getElementById(str(previousAvatar)).className += " active"
                 
             }
         })
@@ -58,7 +58,7 @@ current = document.getElementsByClassName("active");
                 if (current.length !== 0) {
                     current[0].className = current[0].className.replace(" active", "");
                 }
-                document.getElementById(nextAvatar).className += " active"
+                document.getElementById(str(nextAvatar)).className += " active"
             }
         })
 
