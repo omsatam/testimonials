@@ -1,4 +1,5 @@
 .testimonial > h1 {
   transition-property: width;
+  padding:20px;
   transition: all 2s ease ease-in-out;
 }
