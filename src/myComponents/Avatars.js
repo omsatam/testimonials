@@ -90,8 +90,9 @@ setActiveComponent(nextAvatar)
                     <Avatar id={person.id} key={person.id} className={`avatars__avatar ${person.id === 1 && "active"}`} src={person.avatar} />
                 ))}
             </div>
-            < NavigateBeforeIcon id="before" />
-            <NavigateNextIcon id="next" />
+            //removing navigation functionality
+            < NavigateBeforeIcon id="" />
+            <NavigateNextIcon id="t" />
         </>
     )
 }
