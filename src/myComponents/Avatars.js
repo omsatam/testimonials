@@ -58,9 +58,9 @@ var current = document.getElementsByClassName("active");
                 
                 if (current.length !== 0) {
                     current[0].className = current[0].className.replace(" active", "");
-var current = document.getElementsByClassName("active");
-                document.getElementById(nextAvatar).className += " active"
 }
+                document.getElementById(nextAvatar).className += " active"
+
             }
         })
 
