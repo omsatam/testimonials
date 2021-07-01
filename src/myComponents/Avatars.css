@@ -1,5 +1,7 @@
 .avatars {
   display: flex;
+  overflow-x: scroll;
+  padding:20px;
   /* width: 80%; */
   /* justify-content: space-around; */
 }
