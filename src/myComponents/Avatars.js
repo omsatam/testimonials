@@ -43,13 +43,13 @@ function Avatars() {
                 var previousAvatar = parseInt(current[0].id) - parseInt(1) 
                 previousAvatar = previousAvatar.toString()
      
-               setActiveComponent(previousAvatar)
+           //    setActiveComponent(previousAvatar)
 
-              document.getElementById(previousAvatar).className += " active"
+          //    document.getElementById(previousAvatar).className += " active"
                 
-                if (current.length !== 0) {
-                    current[0].className = current[0].className.replace(" active", "");
-                }
+           //     if (current.length !== 0) {
+         //           current[0].className = current[0].className.replace(" active", "");
+         //       }
           
                 
            
@@ -62,14 +62,14 @@ function Avatars() {
                 console.log(current)
 
                 var nextAvatar = parseInt(current[0].id) + parseInt(1)
-                nextAvatar = nextAvatar.toString()
+            //    nextAvatar = nextAvatar.toString()
                 
-setActiveComponent(nextAvatar)
+//setActiveComponent(nextAvatar)
 
-             document.getElementById(nextAvatar).className += " active"
+          //   document.getElementById(nextAvatar).className += " active"
                 
-                if (current.length !== 0) {
-                    current[0].className = current[0].className.replace(" active", "");
+           //     if (current.length !== 0) {
+               //     current[0].className = current[0].className.replace(" active", "");
 }
           
 
@@ -91,8 +91,8 @@ setActiveComponent(nextAvatar)
                 ))}
             </div>
             //removing navigation functionality
-            < NavigateBeforeIcon id="" />
-            <NavigateNextIcon id="t" />
+            < NavigateBeforeIcon id="before" />
+            <NavigateNextIcon id="next" />
         </>
     )
 }
