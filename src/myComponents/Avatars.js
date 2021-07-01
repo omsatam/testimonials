@@ -68,7 +68,7 @@ var current = document.getElementsByClassName("active");
             fetchData()
         }
 
-    }, [data])
+    }, [data,activeComponent])
 
     return (
         <>
