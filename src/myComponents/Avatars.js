@@ -43,13 +43,14 @@ function Avatars() {
                 var previousAvatar = parseInt(current[0].id) - parseInt(1) 
                 previousAvatar = previousAvatar.toString()
      
-               
+               setActiveComponent(previousAvatar)
+
+              document.getElementById(previousAvatar).className += " active"
                 
                 if (current.length !== 0) {
                     current[0].className = current[0].className.replace(" active", "");
                 }
-          setActiveComponent(previousAvatar)
-              document.getElementById(previousAvatar).className += " active"
+          
                 
            
         })
@@ -63,13 +64,14 @@ function Avatars() {
                 var nextAvatar = parseInt(current[0].id) + parseInt(1)
                 nextAvatar = nextAvatar.toString()
                 
+setActiveComponent(nextAvatar)
 
+             document.getElementById(nextAvatar).className += " active"
                 
                 if (current.length !== 0) {
                     current[0].className = current[0].className.replace(" active", "");
 }
-          setActiveComponent(nextAvatar)
-             document.getElementById(nextAvatar).className += " active"
+          
 
             
         })
