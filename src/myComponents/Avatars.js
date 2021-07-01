@@ -46,8 +46,8 @@ function Avatars() {
                 if (current.length !== 0) {
                     current[0].className = current[0].className.replace(" active", "");
                 }
-            setActiveComponent(previousAvatar)
-                document.getElementById(previousAvatar).className += " active"
+          //  setActiveComponent(previousAvatar)
+           //     document.getElementById(previousAvatar).className += " active"
                 
            
         })
@@ -65,8 +65,8 @@ function Avatars() {
                 if (current.length !== 0) {
                     current[0].className = current[0].className.replace(" active", "");
 }
-            setActiveComponent(nextAvatar)
-                document.getElementById(nextAvatar).className += " active"
+          //  setActiveComponent(nextAvatar)
+             //   document.getElementById(nextAvatar).className += " active"
 
             
         })
