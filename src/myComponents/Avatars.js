@@ -90,7 +90,7 @@ function Avatars() {
                     <Avatar id={person.id} key={person.id} className={`avatars__avatar ${person.id === 1 && "active"}`} src={person.avatar} />
                 ))}
             </div>
-            //removing navigation functionality
+           
             < NavigateBeforeIcon id="before" />
             <NavigateNextIcon id="next" />
         </>
