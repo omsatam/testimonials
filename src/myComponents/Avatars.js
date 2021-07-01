@@ -40,15 +40,16 @@ function Avatars() {
         document.getElementById("before").addEventListener("click", function () {
          var  current = document.getElementsByClassName("active");
                 var previousAvatar = parseInt(current[0].id) - parseInt(1)  
-            if(data) {
+     
                
-                setActiveComponent(previousAvatar)
+                
                 if (current.length !== 0) {
                     current[0].className = current[0].className.replace(" active", "");
                 }
+            setActiveComponent(previousAvatar)
                 document.getElementById(previousAvatar).className += " active"
                 
-            }
+           
         })
 
         document.getElementById("next").addEventListener("click", function () {
@@ -58,15 +59,16 @@ function Avatars() {
                 console.log(current)
 
                 var nextAvatar = parseInt(current[0].id) + parseInt(1)
-                if (data) {
+                
 
-                setActiveComponent(nextAvatar);
+                
                 if (current.length !== 0) {
                     current[0].className = current[0].className.replace(" active", "");
 }
+            setActiveComponent(nextAvatar)
                 document.getElementById(nextAvatar).className += " active"
 
-            }
+            
         })
 
         return () => {
