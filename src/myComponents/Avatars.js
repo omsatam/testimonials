@@ -70,7 +70,7 @@ function Avatars() {
                 
            //     if (current.length !== 0) {
                //     current[0].className = current[0].className.replace(" active", "");
-}
+//}
           
 
             
